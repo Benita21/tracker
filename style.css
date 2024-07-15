@@ -71,6 +71,12 @@ body {
 .mcontainer {
   position: relative;
 }
+@media (max-width: 768px) {
+  .mcontainer {
+    margin: auto;
+  }
+}
+
 .container {
   width: 100%;
   max-width: 700px;
