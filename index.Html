@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+   
+</head>
+<body>
+
+
+    <div class="overlay hide-overlay">
+
+    </div>
+    <button class="popup-call"> 
+        <i class='bx bx-plus'></i> 
+         </button>
+         
+   
+         <div class="container">
+        <div class="top-container">
+            <div class="header">
+                <div class="header-left">
+                    <img src="./pics/woman.png" alt="user" width="100" class="profile" />
+                    <div class="">
+                        <h3>Hello Benita</h3>
+                        <p>Welcome Back</p>
+                          </div>
+                    </div>
+                    <div class="header-right">
+                        <i class='bx bx-menu'></i>
+                      </div>
+            </div>
+            <div class="balance">
+                <p class="balance-text">Balance</p>
+                <div class="balance-number">$600</div>
+              </div>
+              
+              <div class="cards">
+                <div class="card">
+                    <div class="card-income">
+                        <div class="icon">
+                            <i class='bx bx-up-arrow-alt'></i>
+                        </div>
+                        <div class="card-details">
+                            <div class="title">
+                                <p>income</p>
+                            </div>
+                            <div class="number income-number">
+                                <p>$400</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-expense">
+                        <div class="icon">
+                            <i class='bx bx-down-arrow-alt'></i>
+                        </div>
+                        <div class="card-details">
+                            <div class="title">
+                                <p>Expenses</p>
+                            </div>
+                            <div class="number expense-number">
+                                <p>$200</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             
+              </div>
+        </div>
+        <div class="transactions">
+            <h2>All transactions</h2>
+            <div class="transaction-cards">
+              
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="add-transaction-popup hide-popup">
+        <div class="top">
+          <h2>New Transaction</h2>
+          <button class="close-btn">
+            <i class='bx bx-x'></i>
+          </button>
+        </div>
+        
+        <form action="">
+          <div class="form-input">
+            <label for="title">Title</label>
+            <input type="text" id="title" placeholder="Enter title" />
+          </div>
+          <div class="form-input">
+            <label for="amount">Amount</label>
+            <input type="number" id="amount" placeholder="Enter Amount" />
+          </div>
+          <div class="input-radio">
+            <p class="label">Select the transaction type</p>
+            <div class="">
+              <input type="radio" name="type" value="income" id="income" />
+              <label for="income">Income</label>
+            </div>
+            <div class="">
+              <input type="radio" value="expense" name="type" id="expense" />
+              <label for="expense">Expense</label>
+            </div>
+          </div>
+          <div class="btns">
+            <button type="button" class="close-btn">Close</button>
+            <button type="submit" class="submit-btn">Create</button>
+          </div>
+        </form>
+      </div>
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

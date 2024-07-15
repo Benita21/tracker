@@ -1,0 +1,13 @@
+.balance {
+    margin-top: 1rem;
+    color: $gray;
+    .balance-text {
+        
+    }
+    .balance-number {
+      font-size: 40px;
+      @media(max-width:768px){
+        font-size: 1rem;
+      }
+    }
+  }

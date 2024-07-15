@@ -1,0 +1,11 @@
+.top-container {
+    background-color: $black;
+    padding: 3rem;
+    @media(max-width:768px){
+        width: 100%;
+        padding: 1rem;
+        p{
+            font-size: 1rem;
+        }
+      }
+}

@@ -1,0 +1,95 @@
+.add-transaction-popup {
+    position: fixed;
+    background-color: $white;
+    // width: 100%;
+    // max-width: 400px;
+  
+    border-radius: 10px;
+    padding: 2rem;
+    color: $black;
+    right: 0;
+    left: 65%;
+    top: 5%;
+    bottom: 10%;
+    border: 1px solid $gray-dark;
+    // height: 800px;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 4rem;
+    @media(max-width:768px){
+      width: 80%;
+      left: 0;
+      margin: 0 auto;
+      // min-height: 100%;
+    }
+    i{
+      border: none;
+    }
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid $gray-dark;
+      padding-bottom: 1rem;
+      .close-btn{
+        border: none;
+      }
+      i{
+        border: none;
+        font-size: 1.4rem;
+      }
+      .close-btn {
+        font-size: 25px;
+      }
+    }
+  }
+  .hide-popup {
+    display: none;
+  }
+  .hide-overlay{
+    display: none;
+  }
+  form {
+    padding: 1rem;
+    .form-input {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      label {
+        margin-bottom: 10px;
+      }
+      input {
+        padding: 10px 25px;
+        border-radius: 5px;
+        font-size: 18px;
+        border: none;
+      }
+    }
+    .input-radio {
+      .label {
+        margin-bottom: 10px;
+      }
+    }
+    .btns {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 0;
+      button {
+        padding: 12px 25px;
+        background-color: $gray;
+        color: $black;
+        border-radius: 5px;
+      }
+      .close-btn {
+        border: 1px solid $gray-dark;
+      }
+      .submit-btn {
+        background-color: $primary;
+        color: $gray;
+        border: none;
+      }
+    }
+  }

@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: #f3f4f6;
+  padding: 3rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  color: #f3f4f6;
+}
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.header .header-left {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .header .header-left {
+    display: flex;
+    align-items: center;
+  }
+  .header .header-left p {
+    font-size: small;
+  }
+  .header .header-left h3 {
+    font-size: small;
+  }
+}
+.header .header-left img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 10px;
+}
+@media (max-width: 768px) {
+  .header .header-left img {
+    width: 50%;
+    height: 50%;
+  }
+}
+.header .header-right {
+  color: #f3f4f6;
+  font-size: 1.6rem;
+}
+@media (max-width: 768px) {
+  .header .header-right {
+    font-size: 1rem;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #f9fafb;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.balance {
+  margin-top: 1rem;
+  color: #f3f4f6;
+}
+.balance .balance-number {
+  font-size: 40px;
+}
+@media (max-width: 768px) {
+  .balance .balance-number {
+    font-size: 1rem;
+  }
+}
+
+.top-container {
+  background-color: #020617;
+  padding: 3rem;
+}
+@media (max-width: 768px) {
+  .top-container {
+    width: 100%;
+    padding: 1rem;
+  }
+  .top-container p {
+    font-size: 1rem;
+  }
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+@media (max-width: 768px) {
+  .cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .cards p {
+    font-size: 1rem;
+  }
+}
+.cards .card {
+  background-color: #f3f4f6;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+@media (max-width: 768px) {
+  .cards .card {
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+  }
+}
+.cards .card .card-income {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .cards .card .card-income {
+    width: 100%;
+    display: flex;
+  }
+}
+.cards .card .card-income .icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bbf7d0;
+  color: #22c55e;
+}
+.cards .card .card-income .title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #22c55e;
+}
+.cards .card .card-income .number {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.cards .card .card-expense {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .cards .card .card-expense {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+  }
+}
+.cards .card .card-expense .icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fce7f3;
+  color: #db2777;
+}
+.cards .card .card-expense .title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #db2777;
+}
+.cards .card .card-expense .number {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.transactions {
+  padding: 3rem;
+  padding-top: 1.5rem;
+}
+@media (max-width: 768px) {
+  .transactions {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+.transactions .transaction-cards {
+  padding-top: 1rem;
+}
+@media (max-width: 768px) {
+  .transactions .transaction-cards {
+    width: 100%;
+  }
+}
+.transactions .transaction-cards .card {
+  box-sizing: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .transactions .transaction-cards .card {
+    width: 100%;
+    padding: 0.3rem;
+  }
+}
+.transactions .transaction-cards .card .icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bbf7d0;
+}
+.transactions .transaction-cards .card .icon i {
+  color: #22c55e;
+}
+.transactions .transaction-cards .card .left-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.transactions .transaction-cards .card .left-card p {
+  font-size: 18px;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .transactions .transaction-cards .card .left-card p {
+    font-size: 0.8rem;
+  }
+}
+.transactions .transaction-cards .card .right-card {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .transactions .transaction-cards .card .right-card p {
+    font-size: 0.8rem;
+  }
+}
+.transactions .transaction-cards .card .right-card .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.transactions .transaction-cards .card .right-card .icons .red {
+  color: #db2777;
+  border-radius: 50%;
+  background-color: #fce7f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.transactions .transaction-cards .card .right-card .icons .green {
+  color: #22c55e;
+  border-radius: 50%;
+  background-color: #bbf7d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.transactions .transaction-cards .card .right-card .icons i {
+  width: 30px;
+  height: 30px;
+}
+@media (max-width: 768px) {
+  .transactions .transaction-cards .card .right-card .icons i {
+    font-size: 1rem;
+  }
+}
+
+.popup-call {
+  background-color: #22c55e;
+  padding: 1.5rem;
+  border-radius: 100%;
+  border: none;
+  position: fixed;
+  bottom: 0;
+  left: 46%;
+}
+@media (max-width: 768px) {
+  .popup-call {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+}
+.popup-call i {
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
+
+.overlay {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 8888;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.add-transaction-popup {
+  position: fixed;
+  background-color: #f9fafb;
+  border-radius: 10px;
+  padding: 2rem;
+  color: #020617;
+  right: 0;
+  left: 65%;
+  top: 5%;
+  bottom: 10%;
+  border: 1px solid #cbd5e1;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 4rem;
+}
+@media (max-width: 768px) {
+  .add-transaction-popup {
+    width: 80%;
+    left: 0;
+    margin: 0 auto;
+  }
+}
+.add-transaction-popup i {
+  border: none;
+}
+.add-transaction-popup .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #cbd5e1;
+  padding-bottom: 1rem;
+}
+.add-transaction-popup .top .close-btn {
+  border: none;
+}
+.add-transaction-popup .top i {
+  border: none;
+  font-size: 1.4rem;
+}
+.add-transaction-popup .top .close-btn {
+  font-size: 25px;
+}
+
+.hide-popup {
+  display: none;
+}
+
+.hide-overlay {
+  display: none;
+}
+
+form {
+  padding: 1rem;
+}
+form .form-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+form .form-input label {
+  margin-bottom: 10px;
+}
+form .form-input input {
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-size: 18px;
+  border: none;
+}
+form .input-radio .label {
+  margin-bottom: 10px;
+}
+form .btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+form .btns button {
+  padding: 12px 25px;
+  background-color: #f3f4f6;
+  color: #020617;
+  border-radius: 5px;
+}
+form .btns .close-btn {
+  border: 1px solid #cbd5e1;
+}
+form .btns .submit-btn {
+  background-color: #22c55e;
+  color: #f3f4f6;
+  border: none;
+}/*# sourceMappingURL=style.css.map */

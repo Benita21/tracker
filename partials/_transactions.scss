@@ -1,0 +1,101 @@
+.transactions {
+    padding: 3rem;
+    padding-top: 1.5rem;
+    @media(max-width:768px){
+      width: 100%;
+      padding: 1rem;
+      
+    }
+    .transaction-cards {
+      padding-top: 1rem;
+      @media(max-width:768px){
+        width: 100%;
+        
+      }
+      .card {
+        box-sizing: $shadow;
+        border-radius: 10px;
+        border: 1px solid $gray-dark;
+        padding: 0.5rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+  
+        margin-bottom: 1rem;
+        @media(max-width:768px){
+          width: 100%;
+          // background-color: red;
+          padding: .3rem;
+
+        }
+        .icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $primary-light;
+            i{
+              color: $primary;
+            }
+          }
+        .left-card {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          p {
+            font-size: 18px;
+            font-weight: 600;
+            @media(max-width:768px){
+              font-size: .8rem;
+            }
+          }
+        }
+        .right-card {
+          font-size: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          @media(max-width:768px){
+            p{
+              font-size: .8rem;
+            }
+          }
+        
+          .icons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .red{
+                color: $secondary;
+                border-radius: 50%;
+                background-color: $secondary-light;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+            .green{
+                color: $primary;
+                border-radius: 50%;
+                background-color: $primary-light;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            i{
+                width: 30px;  
+            height: 30px;
+            @media(max-width:768px){
+        font-size: 1rem;
+            }
+           
+
+            }
+          }
+        }
+      }
+    }
+  }

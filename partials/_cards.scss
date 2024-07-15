@@ -1,0 +1,91 @@
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    @media(max-width:768px){
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      // padding-right: 1rem;
+      p{
+        font-size: 1rem;
+      }
+
+    }
+    .card {
+      background-color: $gray;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      box-shadow: $shadow;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      @media(max-width:768px){
+        width: 100%;
+        padding: .5rem .5rem;
+  
+        
+      }
+      .card-income{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media(max-width:768px){
+          width: 100%;
+          display: flex;
+          // gap: .3rem;
+        }
+        .icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $primary-light;
+  color: $primary;
+          }
+        .title {
+            font-size: 1rem;
+            font-weight: bold;
+            color: $primary;
+          }
+          .number {
+            font-size: 1.5rem;
+            font-weight: bold;
+          }
+      }
+      .card-expense{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media(max-width:768px){
+          width: 100%;
+          display: flex;
+          gap: .5rem;
+        }
+        .icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $secondary-light;
+  color: $secondary;
+          }
+        .title {
+            font-size: 1rem;
+            font-weight: bold;
+            color: $secondary;
+          }
+          .number {
+            font-size: 1.5rem;
+            font-weight: bold;
+          }
+      }
+
+     }}
