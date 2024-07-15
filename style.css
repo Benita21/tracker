@@ -320,6 +320,7 @@ body {
   .popup-call {
     font-size: 0.8rem;
     padding: 8px;
+    bottom: 15%;
   }
 }
 .popup-call i {
