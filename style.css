@@ -68,6 +68,15 @@ body {
   }
 }
 
+.mcontainer {
+  position: relative;
+}
+@media (max-width: 768px) {
+  .mcontainer {
+    margin: auto;
+  }
+}
+
 .container {
   width: 100%;
   max-width: 700px;
@@ -76,6 +85,7 @@ body {
   margin: 0 auto;
   overflow: hidden;
   background-color: #f9fafb;
+  right: 5%;
 }
 @media (max-width: 768px) {
   .container {
@@ -98,7 +108,7 @@ body {
 
 .top-container {
   background-color: #020617;
-  padding: 3rem;
+  padding: 2rem;
 }
 @media (max-width: 768px) {
   .top-container {
@@ -129,7 +139,7 @@ body {
 }
 .cards .card {
   background-color: #f3f4f6;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   display: flex;
@@ -309,18 +319,20 @@ body {
 
 .popup-call {
   background-color: #22c55e;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 100%;
   border: none;
-  position: fixed;
-  bottom: 0;
-  left: 46%;
+  outline: none;
+  position: absolute;
+  bottom: -4.5%;
+  left: 48%;
 }
 @media (max-width: 768px) {
   .popup-call {
     font-size: 0.8rem;
     padding: 8px;
-    bottom: 15%;
+    bottom: -4%;
+    left: 40%;
   }
 }
 .popup-call i {

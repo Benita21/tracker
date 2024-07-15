@@ -1,3 +1,17 @@
+.mcontainer{
+  position: relative;
+  // position: fixed;
+  // left: 35%;
+  @media(max-width:768px){
+    // width: 100%;
+    margin:auto;
+    // position: relative;
+    // left: 9%;
+    // left: 5%;
+    // position: fixed;
+    // bottom: 0%;
+  }
+}
 .container {
     width: 100%;
     max-width: 700px;
@@ -6,8 +20,11 @@
     margin: 0 auto;
     overflow: hidden;
     background-color: $white;
+right: 5%;
+
     @media(max-width:768px){
       width: 100%;
     }
+    
     
   }

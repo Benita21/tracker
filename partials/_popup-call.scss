@@ -1,15 +1,17 @@
 .popup-call{
     background-color:$primary;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 100%;
     border: none;
-    position: fixed;
-    bottom: 0;
-    left: 46%;
+    outline: none;
+    position: absolute;
+    bottom: -4.5%;
+    left: 48%;
     @media(max-width:768px){
     font-size: .8rem;
     padding: 8px;
-    bottom: 15%;
+    bottom: -4%;
+    left: 40%;
       }
     i{
         font-size: 1.5rem;
